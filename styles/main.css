@@ -1,0 +1,456 @@
+:root {
+    --nextui--navbarBlur: 0px;
+    --zc-border-width: 2px;
+}
+
+.light-theme {
+    --nextui-colors-border: black;
+    --nextui-colors-link: black;
+    --nextui--navbarBackgroundColor: white;
+}
+
+.dark-theme {
+    --nextui-colors-border: white;
+    --nextui-colors-link: white;
+    --nextui--navbarBackgroundColor: black;
+}
+
+.light-theme,
+.dark-theme {
+    --nextui-shadows-xs: none;
+    --nextui-shadows-sm: none;
+    --nextui-shadows-md: none;
+    --nextui-shadows-lg: none;
+    --nextui-shadows-xl: none;
+    --nextui-dropShadows-xs: none;
+    --nextui-dropShadows-sm: none;
+    --nextui-dropShadows-md: none;
+    --nextui-dropShadows-lg: none;
+    --nextui-dropShadows-xl: none;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--nextui--navbarBackgroundColor)
+        var(--nextui-colors-border);
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--nextui--navbarBackgroundColor);
+    border: var(--zc-border-width) dashed var(--nextui-colors-border);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--nextui--navbarBackgroundColor);
+    border: var(--zc-border-width) solid var(--nextui-colors-border);
+}
+
+::selection {
+    background-color: var(--nextui-colors-border);
+    color: var(--nextui--navbarBackgroundColor);
+}
+
+@font-face {
+    font-family: "NeueMontreal-Medium";
+    src: url(../fonts/NeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: "NeueMontreal-Regular";
+    src: url(../fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: "NeueMontreal-Light";
+    src: url(../fonts/NeueMontreal-Light.otf);
+}
+
+.tm {
+    font-family: "NeueMontreal-Medium";
+}
+
+.ts {
+    font-family: "NeueMontreal-Regular";
+}
+
+.to {
+    font-family: "NeueMontreal-Light";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+main {
+    min-height: 200vh;
+}
+
+.nextui-navbar {
+    background: var(--nextui--navbarBackgroundColor);
+    border-bottom: var(--zc-border-width) var(--nextui-colors-border) solid;
+    border-top: var(--zc-border-width) var(--nextui-colors-border) solid;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.nextui-navbar-container {
+    max-width: 100%;
+    border-left: var(--zc-border-width) solid var(--nextui-colors-border);
+    border-right: var(--zc-border-width) solid var(--nextui-colors-border);
+}
+
+.nextui-navbar-collapse {
+    backdrop-filter: blur(2px) !important;
+}
+
+.nextui-navbar-collapse-wrapper {
+    max-width: 70%;
+    height: 100%;
+    transform: translateX(50%);
+    overflow: hidden;
+    border-left: var(--zc-border-width) var(--nextui-colors-border) solid;
+    background-color: var(--nextui--navbarBackgroundColor);
+}
+
+.theme-switch {
+    position: relative;
+    bottom: 3px;
+}
+
+.nextui-navbar .nextui-switch,
+.nextui-switch-circle {
+    border: var(--zc-border-width) var(--nextui-colors-border) solid;
+    border-radius: 0;
+}
+
+.nextui-navbar .nextui-c-itiWTf-bDUxer-checked-true {
+    background: black;
+}
+
+.nextui-navbar .nextui-c-STltJ-bwQcWP-color-default {
+    --nextui--switchColorHover: rgb(15, 15, 15);
+}
+
+.nextui-c-iTPCAT {
+    --nextui--navbarListBlur: 0px;
+}
+
+.nextui-c-fdHeMm {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#landing,
+#about,
+#projects,
+#contact,
+footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: var(--zc-border-width) solid var(--nextui-colors-border);
+}
+
+.nextui-c-fdHeMm {
+    border-left: var(--zc-border-width) solid var(--nextui-colors-border);
+    border-right: var(--zc-border-width) solid var(--nextui-colors-border);
+    position: relative;
+}
+
+.zoclhas-tm {
+    font-size: clamp(60px, 8vw, 80px);
+}
+
+.web-dev-tm::after {
+    content: "&";
+    font-size: 2rem;
+}
+
+#landing .main-tm {
+    margin-left: 1rem;
+    width: 100%;
+}
+
+#landing .nextui-grid-container {
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#landing .nextui-grid-container .nextui-grid-item {
+    border-top: var(--zc-border-width) var(--nextui-colors-border) solid;
+}
+
+#landing .nextui-grid-container .nextui-grid-item:not(:nth-child(4)) {
+    border-right: var(--zc-border-width) var(--nextui-colors-border) solid;
+}
+
+#landing .nextui-grid-container .nextui-grid-item {
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+#landing .nextui-grid-container .nextui-grid-item .tm {
+    font-size: clamp(30px, 8vw, 30px);
+    position: relative;
+    top: 2vh;
+}
+
+.nextui-c-cFCyVg {
+    border-radius: 0px;
+    border: var(--zc-border-width) var(--nextui-colors-border) solid;
+}
+
+.section-titles {
+    height: 20vh;
+    border-bottom: var(--zc-border-width) var(--nextui-colors-border) solid;
+    display: flex;
+    align-items: flex-end;
+}
+
+.section-titles .tm {
+    font-size: clamp(40px, 8vw, 80px);
+    margin-left: 1rem;
+}
+
+#about .nextui-grid-item:nth-child(1),
+#contact .nextui-grid-container .nextui-grid-item:nth-child(1) {
+    border-right: var(--zc-border-width) var(--nextui-colors-border) solid;
+}
+
+#contact form .nextui-grid-item:nth-child(1) {
+    border-right: 0 !important;
+}
+
+#about img {
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+img {
+    filter: saturate(0);
+    transition: filter 250ms ease-in-out;
+}
+
+img:hover {
+    filter: saturate();
+}
+
+.ml {
+    color: var(--nextui-colors-border);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 1px;
+    transition: color ease 0.3s;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    z-index: 2;
+}
+
+.ml::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: var(--zc-border-width);
+    left: 0;
+    bottom: 0;
+    background-color: var(--nextui-colors-border);
+    transition: all ease 0.3s;
+}
+
+.ml:hover {
+    color: var(--nextui--navbarBackgroundColor);
+}
+
+.ml:hover::after {
+    height: 100%;
+}
+
+#about .nextui-button {
+    background-color: var(--nextui--navbarBackgroundColor);
+    color: var(--nextui-colors-border);
+    border-bottom: var(--zc-border-width) var(--nextui-colors-border) solid;
+    border-radius: 0;
+    font-size: clamp(20px, 2vw, 20px);
+}
+
+.nextui-button-text {
+    font-family: "NeueMontreal-Medium";
+}
+
+#projects .nextui-grid-item {
+    min-height: 30vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#projects .nextui-c-BDLTQ {
+    background-color: var(--nextui--navbarBackgroundColor);
+    border: 0;
+    border-radius: 0;
+}
+
+#projects .nextui-c-bZLhCa-iiMwZzC-css {
+    height: 2px;
+}
+
+#projects .nextui-c-BDLTQ p {
+    font-family: "NeueMontreal-Regular";
+}
+
+#contact .nextui-grid-item {
+    min-height: 80vh;
+}
+
+#contact .nextui-button {
+    background-color: var(--nextui-colors-border);
+    color: var(--nextui--navbarBackgroundColor);
+    border-radius: 0;
+    font-size: clamp(20px, 2vw, 20px);
+    height: 4rem;
+}
+
+.form-submit {
+    display: flex;
+    gap: 1rem;
+}
+
+.ml-1 {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--nextui-colors-border);
+    padding: 0 1px;
+    transition: color ease 0.3s;
+}
+
+.ml-1::before,
+.ml-1::after {
+    content: "";
+    position: absolute;
+    background-color: var(--nextui-colors-border);
+    z-index: 1;
+    height: var(--zc-border-width);
+}
+
+.ml-1::before {
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: width ease 0.4s;
+}
+
+.ml-1::after {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all ease 0.6s;
+}
+
+.ml-1:hover::before {
+    width: 100%;
+}
+
+.ml-1:hover::after {
+    left: 100%;
+    width: 0%;
+    transition: all ease 0.2s;
+}
+
+@media (max-width: 649px) {
+    .nextui-navbar {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .nextui-navbar-collapse {
+        border-top: var(--zc-border-width) var(--nextui-colors-border) solid;
+    }
+
+    #landing,
+    #about,
+    #projects,
+    #contact,
+    footer {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #landing .nextui-grid-container {
+        height: 10rem;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #landing .nextui-grid-container .nextui-grid-item:nth-child(2) {
+        border-right: none;
+    }
+
+    #about .nextui-grid-item:nth-child(1),
+    #contact .nextui-grid-item:nth-child(1) {
+        border-right: none;
+        border-bottom: var(--zc-border-width) var(--nextui-colors-border) solid;
+    }
+
+    .form-submit {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1339px) {
+    #scroll-text {
+        display: none;
+    }
+}
+
+@media (min-width: 650px) {
+    #scroll-text {
+        position: fixed;
+        right: 0;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0) translateY(50%);
+    }
+
+    #scroll-text span {
+        transition: transform 0.5s ease, top 0.5s ease;
+    }
+
+    #scroll-text[data-scroll="true"] span:nth-child(7) {
+        transform: translateX(2rem);
+    }
+    #scroll-text[data-scroll="true"] span:nth-child(6) {
+        transform: translateX(2.5rem);
+    }
+    #scroll-text[data-scroll="true"] span:nth-child(5) {
+        transform: translateX(3rem);
+    }
+    #scroll-text[data-scroll="true"] span:nth-child(4) {
+        transform: translateX(3.5rem);
+    }
+    #scroll-text[data-scroll="true"] span:nth-child(3) {
+        transform: translateX(4rem);
+    }
+    #scroll-text[data-scroll="true"] span:nth-child(2) {
+        transform: translateX(4.5rem);
+    }
+    #scroll-text[data-scroll="true"] span:nth-child(1) {
+        transform: translateX(5rem);
+    }
+}
