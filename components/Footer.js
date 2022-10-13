@@ -24,7 +24,7 @@ export default function App() {
                         View website source on{" "}
                         <a
                             className="tm ml-1"
-                            href="https://github.com/zoclhas/zoclhas"
+                            href="https://github.com/zoclhas/zoclhas-website-v4"
                             target="_blank"
                             rel="noreferrer"
                         >
