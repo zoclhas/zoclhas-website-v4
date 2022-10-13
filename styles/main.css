@@ -55,30 +55,30 @@
 }
 
 @font-face {
-    font-family: "NeueMontreal-Medium";
+    font-family: "NeueMontreal-Medium", sans-serif;
     src: url(../fonts/NeueMontreal-Medium.otf);
 }
 
 @font-face {
-    font-family: "NeueMontreal-Regular";
+    font-family: "NeueMontreal-Regular", sans-serif;
     src: url(../fonts/NeueMontreal-Regular.otf);
 }
 
 @font-face {
-    font-family: "NeueMontreal-Light";
+    font-family: "NeueMontreal-Light", sans-serif;
     src: url(../fonts/NeueMontreal-Light.otf);
 }
 
 .tm {
-    font-family: "NeueMontreal-Medium";
+    font-family: "NeueMontreal-Medium", sans-serif;
 }
 
 .ts {
-    font-family: "NeueMontreal-Regular";
+    font-family: "NeueMontreal-Regular", sans-serif;
 }
 
 .to {
-    font-family: "NeueMontreal-Light";
+    font-family: "NeueMontreal-Light", sans-serif;
 }
 
 html {
