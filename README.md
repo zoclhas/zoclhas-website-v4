@@ -12,7 +12,7 @@ The official source code for my portfolio site. Made using NextJS & NextUI- and 
 
 Yes you can fork this repo, and modify it for your personal site- **but you attribution is required.**
 
-You can give the attribution by linking my website [zoclhas.com](https://zoclhas.com/) or linking to this [GitHub Page](https://github.com/zoclhas/zoclhas-website-v4)
+You can give the attribution by linking my website [zoclhas.com](https://zoclhas.com/) or linking to this [GitHub Page](https://github.com/zoclhas/zoclhas-website-v4).
 
 ## Installation
 
