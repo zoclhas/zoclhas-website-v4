@@ -290,7 +290,7 @@ img:hover {
 }
 
 .nextui-button-text {
-    font-family: "NeueMontreal-Medium";
+    font-family: "NeueMontreal-Medium", sans-serif;
 }
 
 #projects .nextui-grid-item {
@@ -310,7 +310,7 @@ img:hover {
 }
 
 #projects .nextui-c-BDLTQ p {
-    font-family: "NeueMontreal-Regular";
+    font-family: "NeueMontreal-Regular", sans-serif;
 }
 
 #contact .nextui-grid-item {
