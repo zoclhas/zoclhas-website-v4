@@ -13,17 +13,35 @@ export default function App() {
                 }}
             >
                 <Fade cascade triggerOnce duration="550">
-                    <Text className="tm" h4 as="a" href="/">
+                    <Text className="tm ml" h4 as="a" href="/">
                         zoclhas.com
                     </Text>
                     <Text className="tm" h5>
-                        Made using <a>NextJS</a> & <a>NextUI</a>
+                        Made using {""}
+                        <a
+                            className="ml-1"
+                            href="https://nextjs.org/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            NextJS <LinkArrow size="10" />
+                        </a>
+                        &nbsp;
+                        {""}&{" "}
+                        <a
+                            className="ml-1"
+                            href="https://nextjs.org/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            NextUI <LinkArrow size="10" />
+                        </a>
                     </Text>
                     <Spacer y={-0.65} />
-                    <Text>
+                    <Text className="tm">
                         View website source on{" "}
                         <a
-                            className="tm ml-1"
+                            className="ml-1"
                             href="https://github.com/zoclhas/zoclhas-website-v4"
                             target="_blank"
                             rel="noreferrer"
