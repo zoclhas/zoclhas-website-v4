@@ -13,11 +13,11 @@ import {
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import Contact from "../components/Contact";
+import ProjectsSection from "../components/ProjectsSection";
 
 import aboutImage from "../public/about-pfp.png";
 import { LinkArrow } from "../components/LinkArrow";
 import { CopyIcon } from "../components/CopyIcon";
-import { GitHubLogo } from "../components/GitHubLogo";
 
 export default function Home() {
     const [copyDiscordContent, setCopyDiscordContent] = useState();
@@ -303,167 +303,7 @@ export default function Home() {
                             </Text>
                         </Fade>
                     </div>
-                    <Grid.Container>
-                        <Grid
-                            md={4}
-                            sm={6}
-                            xs={12}
-                            css={{ justifyContent: "center" }}
-                        >
-                            <Card css={{ mw: "330px" }}>
-                                <Reveal
-                                    triggerOnce
-                                    keyframes={slideUp}
-                                    duration={500}
-                                >
-                                    <Card.Image
-                                        src="/shivamzter-com.png"
-                                        objectFit="cover"
-                                        width="100%"
-                                        height={340}
-                                        alt="Shivamzter Website Image"
-                                        showSkeleton
-                                    />
-                                    <Card.Divider />
-                                    <Card.Header
-                                        className="tm"
-                                        css={{
-                                            justifyContent: "space-between",
-                                        }}
-                                        as="a"
-                                        href="https://shivamzter.com"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        shivamzter.com <LinkArrow height="15" />
-                                    </Card.Header>
-                                    <Card.Divider />
-                                    <Card.Body className="ts">
-                                        <Text>
-                                            A Bootstrap site, with certain pages
-                                            written in ReactJS. Backend is
-                                            served using Django.
-                                        </Text>
-                                    </Card.Body>
-                                    <Card.Divider />
-                                    <Card.Footer>
-                                        <Link
-                                            href="https://github.com/zoclhas/shivamzter-website"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            <GitHubLogo size="30" />
-                                        </Link>
-                                    </Card.Footer>
-                                </Reveal>
-                            </Card>
-                        </Grid>
-                        <Grid
-                            md={4}
-                            sm={6}
-                            xs={12}
-                            css={{ justifyContent: "center" }}
-                        >
-                            <Card css={{ mw: "330px" }}>
-                                <Reveal
-                                    triggerOnce
-                                    keyframes={slideUp}
-                                    duration={500}
-                                >
-                                    <Card.Image
-                                        src="/dev-zaura-net.png"
-                                        objectFit="cover"
-                                        width="100%"
-                                        height={340}
-                                        alt="Card image background"
-                                        showSkeleton
-                                    />
-                                    <Card.Divider />
-                                    <Card.Header
-                                        className="tm"
-                                        css={{
-                                            justifyContent: "space-between",
-                                        }}
-                                        as="a"
-                                        href="https://zaura.net"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        zaura.net <LinkArrow height="15" />
-                                    </Card.Header>
-                                    <Card.Divider />
-                                    <Card.Body className="ts">
-                                        <Text>
-                                            WIP site for{" "}
-                                            <a
-                                                href="https://zaura.net"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="ml"
-                                            >
-                                                zaura.net
-                                            </a>{" "}
-                                            made using ReactJS and NextUI.
-                                        </Text>
-                                    </Card.Body>
-                                </Reveal>
-                            </Card>
-                        </Grid>
-                        <Grid
-                            md={4}
-                            sm={6}
-                            xs={12}
-                            css={{ justifyContent: "center" }}
-                        >
-                            <Card css={{ mw: "330px" }}>
-                                <Reveal
-                                    triggerOnce
-                                    keyframes={slideUp}
-                                    duration={500}
-                                >
-                                    <Card.Image
-                                        src="/Amulet.webp"
-                                        objectFit="cover"
-                                        width="100%"
-                                        height={340}
-                                        alt="Card image background"
-                                        showSkeleton
-                                    />
-                                    <Card.Divider />
-                                    <Card.Header
-                                        className="tm"
-                                        css={{
-                                            justifyContent: "space-between",
-                                        }}
-                                        as="a"
-                                        href="https://zaura.net/Amulet"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Amulet <LinkArrow height="15" />
-                                    </Card.Header>
-                                    <Card.Divider />
-                                    <Card.Body className="ts">
-                                        <Text>
-                                            Amulet is a high-res stylized
-                                            POM/PBR resourcepack for Minecraft.
-                                            Generated procedurally, using
-                                            Substance Designer- and{" "}
-                                            <a
-                                                href="https://github.com/null511/PixelGraph-Release"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="ml"
-                                            >
-                                                PixelGraph
-                                            </a>
-                                            .
-                                        </Text>
-                                    </Card.Body>
-                                </Reveal>
-                            </Card>
-                        </Grid>
-                    </Grid.Container>
+                    <ProjectsSection />
                 </Container>
             </section>
             <section id="contact">
