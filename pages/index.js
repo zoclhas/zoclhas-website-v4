@@ -200,7 +200,7 @@ export default function Home() {
                             </Text>
                         </Fade>
                     </div>
-                    <Grid.Container>
+                    <Grid.Container className="main-gc">
                         <Grid
                             sm={6}
                             xs={12}
@@ -209,6 +209,7 @@ export default function Home() {
                                 flexDirection: "column",
                                 justifyContent: "center",
                             }}
+                            className="bordered"
                         >
                             <Reveal
                                 cascade
@@ -270,15 +271,30 @@ export default function Home() {
                                     .
                                 </Text>
                                 <Spacer />
-                                <Button
-                                    as="a"
-                                    href="#contact"
-                                    className="ts"
-                                    css={{ width: "100%" }}
-                                >
-                                    Get In Touch &nbsp;{" "}
-                                    <LinkArrow rotate="90" height="15" />
-                                </Button>
+                                <Text h3 className="ts">
+                                    Technologies I've worked with:
+                                    <Spacer y={0.5} />
+                                    <Grid.Container css={{ gap: "0.5rem" }}>
+                                        <Grid xs={4} className="tech-borders">
+                                            HTML, CSS, JS
+                                        </Grid>
+                                        <Grid xs={4} className="tech-borders">
+                                            ReactJS
+                                        </Grid>
+                                        <Grid xs={4} className="tech-borders">
+                                            NextJS
+                                        </Grid>
+                                        <Grid xs={4} className="tech-borders">
+                                            Django
+                                        </Grid>
+                                        <Grid xs={4} className="tech-borders">
+                                            Bootstrap
+                                        </Grid>
+                                        <Grid xs={4} className="tech-borders">
+                                            NextUI
+                                        </Grid>
+                                    </Grid.Container>
+                                </Text>
                             </Reveal>
                         </Grid>
                         <Grid sm={6} xs={12}>
@@ -327,6 +343,7 @@ export default function Home() {
                                 flexDirection: "column",
                                 justifyContent: "center",
                             }}
+                            className="bordered"
                         >
                             <Reveal
                                 triggerOnce

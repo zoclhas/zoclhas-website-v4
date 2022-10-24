@@ -226,8 +226,8 @@ footer {
     margin-left: 1rem;
 }
 
-#about .nextui-grid-item:nth-child(1),
-#contact .nextui-grid-container .nextui-grid-item:nth-child(1) {
+#about .bordered,
+#contact .bordered {
     border-right: var(--zc-border-width) var(--nextui-colors-border) solid;
 }
 
@@ -287,6 +287,11 @@ img:hover {
     border-bottom: var(--zc-border-width) var(--nextui-colors-border) solid;
     border-radius: 0;
     font-size: clamp(20px, 2vw, 20px);
+}
+
+.tech-borders {
+    border-left: var(--zc-border-width) var(--nextui-colors-border) dotted;
+    padding-left: 0.5rem;
 }
 
 .nextui-button-text {
@@ -401,8 +406,8 @@ img:hover {
         border-right: none;
     }
 
-    #about .nextui-grid-item:nth-child(1),
-    #contact .nextui-grid-item:nth-child(1) {
+    #about .bordered,
+    #contact .bordered {
         border-right: none;
         border-bottom: var(--zc-border-width) var(--nextui-colors-border) solid;
     }
