@@ -35,7 +35,7 @@ export default function ProjectsSection() {
                             objectFit="cover"
                             width="100%"
                             height={340}
-                            alt="Shivamzter Website Image"
+                            alt="Zoclhas website image"
                             showSkeleton
                         />
                         <Card.Divider />
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
                         <Card.Divider />
                         <Card.Body className="ts">
                             <Text>
-                                Portfolio site made usign NextJS & NextUI.
+                                Portfolio site made using NextJS & NextUI.
                             </Text>
                         </Card.Body>
                         <Card.Divider />
