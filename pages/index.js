@@ -272,7 +272,7 @@ export default function Home() {
                                 </Text>
                                 <Spacer />
                                 <Text h3 className="ts">
-                                    Technologies I've worked with:
+                                    Technologies I&apos;ve worked with:
                                     <Spacer y={0.5} />
                                     <Grid.Container css={{ gap: "0.5rem" }}>
                                         <Grid xs={4} className="tech-borders">
